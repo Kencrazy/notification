@@ -52,7 +52,7 @@
           message: "Successfully sent message",
           token: receivedToken,
         });
-        console.log("Successfully sent message:", response);
+        console.log("Successfully sent message:", response.responses[0].error.message);
       })
       .catch((error) => {
         res.status(400).json({ error: error.message });
