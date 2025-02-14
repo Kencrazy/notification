@@ -6,7 +6,8 @@
   import bodyParser from "body-parser";
 
   process.env.GOOGLE_APPLICATION_CREDENTIALS;
-
+  const PORT = process.env.PORT || 8080;
+  
   const app = express();
   app.use(express.json());
   app.use(bodyParser.json())
@@ -89,6 +90,6 @@
     );
   });
 
-  app.listen(8080, '0.0.0.0', () => {
-    console.log(`Server started on http://0.0.0.0:8080`);
+  app.listen(PORT, () => {
+    console.log(`Server started on ${PORT}`);
   });
