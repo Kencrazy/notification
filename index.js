@@ -35,7 +35,6 @@
 
   app.post("/api/push-notify", function (req, res) {
     const receivedToken = req.body.fcmToken;
-    // const receivedToken = ["c7VmA-MD7bC29EhL3ZzsWM:APA91bF75gmX7fAmsOMSG6n-bvGaIjpeWaAtw_GnlNL8Zi-BU9GTxWmrgGFTBerL0egAcsdGOb36Kr9a7EaBjchhqSy7wtc0p6pFrQ8PxPvduetGn-3BgNo"]
     
     const message = {
       notification: {
